@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Национален парк Рила">
+    <meta name="keywords" content="Рила, национален парк, България, Мусала, природа">
+    <meta name="author" content="Анели Бачева">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rila.css">
+    <title>Национален парк Рила</title>
+</head>
+
+<body>
+<header>
+    <div id="headerPicture">
+        <img src="нп банер.png" alt="Българска природа" style="width:100%; height:300px; object-fit:cover;">
+    </div>
+
+    <div id="navContainer" class="navContainer">
+        <div id="navBar">
+            <div class="navButton" onclick="location.href='index.html'" ><a href="javascript:void(0)">Начало</a></div>
+            <div id="navButton" onclick="location.href='pirin.html'"><a href="javascript:void(0)">НП Пирин</a></div>
+            <div id="navButton" onclick="location.href='rila.html'" class="onPageButton"><a href="javascript:void(0)">Рила (национален парк)</a></div>
+            <div id="navButton" onclick="location.href='centralenbalkan.html'"><a href="javascript:void(0)">НП Централен Балкан</a></div>
+            <div id="navButton" onclick="location.href='kontakti.html'"><a href="javascript:void(0)">За нас</a></div>
+        </div>
+    </div>
+</header>
+
+<main id="mainPaddingAdd">
+    <h1>Национален парк „Рила“</h1>
+
+    <table class="infoTable">
+        <tr>
+            <td style="width:20%;">
+                <img src="рила лого.jpg" alt="Лого Рила" style="width:100%;">
+            </td>
+
+            <td>
+                <p id="text1">
+                    Национален парк „Рила“ е най-големият национален парк в България.
+                    Обявен е за защитена територия през 1992 г.
+                    Тук се намира най-високият връх на Балканския полуостров – Мусала (2925 м).
+                    <br><br>
+                    <strong>Флора:</strong> Над 1400 вида висши растения,
+                    вековни гори от смърч, ела и бяла мура,
+                    както и уникалната рилска иглика.
+                    <br><br>
+                    <strong>Фауна:</strong> Срещат се дива коза, кафява мечка,
+                    вълк, скален орел и много други видове.
+                </p>
+            </td>
+
+            <td style="width:25%;">
+                <img src="Рила (национален парк) карта.jpg" alt="Карта Рила" style="width:100%;">
+            </td>
+        </tr>
+    </table>
+
+    <table id="tablePictures">
+        <tr>
+            <td><img src="Рила (национален парк).jpg" alt="Рила"></td>
+            <td><img src="Рила (национален парк)2.jpg" alt="Рила"></td>
+            <td><img src="Рила (национален парк)3.jpg" alt="Рила"></td>
+            <td><img src="Рила (национален парк)4.jpg" alt="Рила"></td>
+        </tr>
+    </table>
+</main>
+
+<footer>
+    <strong>Национални паркове</strong><br>
+    <strong>&copy; Анели Бачева</strong>
+</footer>
+
+<script>
+window.onscroll = function () {
+    const nav = document.getElementById("navContainer");
+    const main = document.getElementById("mainPaddingAdd");
+    const sticky = nav.offsetTop;
+
+    if (window.pageYOffset >= sticky) {
+        nav.classList.add("sticky");
+        main.classList.add("mainPaddingAdd");
+    } else {
+        nav.classList.remove("sticky");
+        main.classList.remove("mainPaddingAdd");
+    }
+};
+</script>
+</body>
+</html>

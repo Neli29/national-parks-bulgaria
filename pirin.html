@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Национален парк Пирин">
+    <meta name="keywords" content="Пирин, национален парк, България, природа, ЮНЕСКО">
+    <meta name="author" content="Анели Бачева">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pirin.css">
+    <title>Национален парк Пирин</title>
+</head>
+
+<body>
+<header>
+    <div id="headerPicture">
+        <img src="нп банер.png" alt="Българска природа" style="width:100%; height:300px; object-fit:cover;">
+    </div>
+
+    <div id="navContainer" class="navContainer">
+    <div id="navBar">
+                <div id="navButton" onclick="location.href='index.html'"><a href="javascript:void(0)">Начало</a></div>
+                <div id="navButton" onclick="location.href='pirin.html'" class="onPageButton"><a href="javascript:void(0)">НП Пирин</a></div>
+                <div id="navButton" onclick="location.href='rila.html'"><a href="javascript:void(0)">НП Рила</a></div>
+                <div id="navButton" onclick="location.href='centralenbalkan.html'"><a href="javascript:void(0)">НП Централен Балкан</a></div>
+                <div id="navButton" onclick="location.href='kontakti.html'"><a href="javascript:void(0)">За нас</a></div>
+    </div>
+</div>
+</header>
+
+<main id="mainPaddingAdd">
+    <h1>Национален парк „Пирин“</h1>
+
+    <table class="infoTable">
+        <tr>
+            <td style="width:20%;">
+                <img src="пирин лого.jpg" alt="Лого Пирин" style="width:100%;">
+            </td>
+
+            <td>
+                <p id="text1">
+                    Национален парк „Пирин“ обхваща по-голямата част от величествената планина Пирин.
+                    От 1983 г. той е включен в Списъка на световното културно и природно наследство на ЮНЕСКО.
+                    Площта му е 40 356 хектара.
+                    <br><br>
+                    <strong>Флора:</strong> Емблемата на Пирин е вековната Байкушева мура
+                    на възраст над 1300 години. По скалните тераси цъфти еделвайс.
+                    <br><br>
+                    <strong>Фауна:</strong> Срещат се скален орел, сокол скитник,
+                    дива коза, мечки и вълци.
+                </p>
+            </td>
+
+            <td style="width:25%;">
+                <img src="Пирин (национален парк) карта.jpg" alt="Карта Пирин" style="width:100%;">
+            </td>
+        </tr>
+    </table>
+
+    <table id="tablePictures">
+        <tr>
+            <td><img src="Пирин (национален парк).jpg" alt="Пирин"></td>
+            <td><img src="Пирин (национален парк)2.jpg" alt="Пирин"></td>
+            <td><img src="Пирин (национален парк)3.jpg" alt="Пирин"></td>
+        </tr>
+    </table>
+
+
+</div>
+
+</main>
+
+<footer>
+    <strong>Национални паркове</strong><br>
+    <strong>&copy; Анели Бачева</strong>
+</footer>
+
+<script>
+window.onscroll = function () {
+    const nav = document.getElementById("navContainer");
+    const main = document.getElementById("mainPaddingAdd");
+    const sticky = nav.offsetTop;
+
+    if (window.pageYOffset >= sticky) {
+        nav.classList.add("sticky");
+        main.classList.add("mainPaddingAdd");
+    } else {
+        nav.classList.remove("sticky");
+        main.classList.remove("mainPaddingAdd");
+    }
+};
+</script>
+</body>
+</html>

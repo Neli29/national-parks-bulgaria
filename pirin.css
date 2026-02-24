@@ -1,0 +1,62 @@
+/* =========================
+   ОБЩ СТИЛ ЗА ТАБЛИЦИ
+   ========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* =========================
+   ТАБЛИЦА С ТЕКСТ + ЛОГО + КАРТА
+   ========================= */
+.infoTable td {
+    text-align: left;
+}
+
+/* =========================
+   ГАЛЕРИЯ СЪС СНИМКИ
+   ========================= */
+#tablePictures {
+    margin: 30px auto;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+#tablePictures td {
+    border: none;
+}
+
+#tablePictures img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   ОСНОВЕН ТЕКСТ
+   ========================= */
+#text1 {
+    padding: 0 30px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* =========================
+   КОНТАКТИ / МАТЕРИАЛНА БАЗА
+   ========================= */
+#materialnaBaza {
+    margin: auto;
+    width: 700px;
+    padding: 15px;
+    text-align: left;
+}

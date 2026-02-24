@@ -1,0 +1,15 @@
+/* Центриране на целия текст в страницата */
+#mainPaddingAdd {
+    text-align: center;
+}
+
+/* Центриране на footer-а */
+footer {
+    text-align: center;
+}
+
+/* Центриране на списъка по красив начин */
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
