@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Национален парк Централен Балкан">
+    <meta name="keywords" content="Централен Балкан, национален парк, България, Стара планина, природа">
+    <meta name="author" content="Анели Бачева">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="centralenbalkan.css">
+    <title>Национален парк Централен Балкан</title>
+</head>
+
+<body>
+<header>
+    <div id="headerPicture">
+        <img src="нп банер.png" alt="Българска природа" style="width:100%; height:300px; object-fit:cover;">
+    </div>
+
+    <div id="navContainer" class="navContainer">
+        <div id="navBar">
+            <div class="navButton" onclick="location.href='index.html'"><a href="javascript:void(0)">Начало</a></div>
+            <div id="navButton" onclick="location.href='pirin.html'"><a href="javascript:void(0)">НП Пирин</a></div>
+            <div id="navButton" onclick="location.href='rila.html'"><a href="javascript:void(0)">НП Рила</a></div>
+            <div id="navButton" onclick="location.href='centralenbalkan.html'" class="onPageButton"><a href="javascript:void(0)">НП Централен Балкан</a></div>
+            <div id="navButton" onclick="location.href='kontakti.html'"><a href="javascript:void(0)">За нас</a></div>
+        </div>
+    </div>
+</header>
+
+<main id="mainPaddingAdd">
+    <h1>Национален парк „Централен Балкан“</h1>
+
+    <table class="infoTable">
+        <tr>
+		<td style="width:20%;">
+                <img src="cb-logo.jpg" alt="Лого Централен Балкан" style="width:100%;">
+            </td>
+			<td>
+                <p id="text1">
+                    Национален парк „Централен Балкан“ се намира в сърцето на България,
+                    в най-високите части на Стара планина.
+                    Площта му е 72 021 хектара и е създаден през 1991 г.
+                    <br><br>
+                    Тук се намира най-високият постоянен водопад в България –
+                    <strong>Райското пръскало</strong> (124,5 м).
+                    <br><br>
+                    <strong>Флора:</strong> Вековни букови гори,
+                    част от световното наследство на ЮНЕСКО,
+                    и над 1900 вида висши растения.
+                    <br><br>
+                    <strong>Фауна:</strong> Кафява мечка, благороден елен,
+                    сърна, видра и редкият царски орел.
+                </p>
+            </td>
+
+            <td style="width:30%;">
+                <img src="централен балкан карта.jpg" alt="Карта Централен Балкан" style="width:100%;">
+            </td>
+        </tr>
+    </table>
+
+    <table id="tablePictures">
+        <tr>
+            <td><img src="централен балкан.jpg" alt="Централен Балкан"></td>
+            <td><img src="централен балкан 2.jpg" alt="Централен Балкан"></td>
+            <td><img src="централен балкан 3.jpg" alt="Централен Балкан"></td>
+        </tr>
+    </table>
+</main>
+
+<footer>
+    <strong>Национални паркове</strong><br>
+    <strong>&copy; Анели Бачева</strong>
+</footer>
+
+<script>
+window.onscroll = function () {
+    const nav = document.getElementById("navContainer");
+    const main = document.getElementById("mainPaddingAdd");
+    const sticky = nav.offsetTop;
+
+    if (window.pageYOffset >= sticky) {
+        nav.classList.add("sticky");
+        main.classList.add("mainPaddingAdd");
+    } else {
+        nav.classList.remove("sticky");
+        main.classList.remove("mainPaddingAdd");
+    }
+};
+</script>
+</body>
+</html>
